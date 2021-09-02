@@ -1,7 +1,8 @@
 # W5term2
 
 # Description:
-* Emulating an oldschool CRT terminal  with scanlines, flickering text and all the retro good stuff.\n\nInspired by hackertyper and the hacking minigame from the Fallout game series.
+* Emulating an oldschool CRT terminal  with scanlines, flickering text and all the retro good stuff.
+Inspired by hackertyper and the hacking minigame from the Fallout game series.
 See the article: 
 https://dev.to/ekeijl/retro-crt-terminal-screen-in-css-js-4afh
 
