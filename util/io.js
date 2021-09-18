@@ -77,6 +77,7 @@ function getChar(char) {
  * @param {Boolean} options.stopBlinking Stop blinking when typing is done
  * @param {Boolean} options.processChars Whether to preprocess spaces, tabs and newlines to &nbsp; (3x&nbsp;) and <br>
  * @param {Boolean} options.clearContainer Clear container before typing
+ * @param {Boolean} options.sound play key sound while typing
  * @param {Element} container DOM element where text will be typed
  */
 async function type(
@@ -95,7 +96,8 @@ async function type(
 		useContainer = false,
 		stopBlinking = true,
 		processChars = true,
-		clearContainer = false
+		clearContainer = false,
+		sound = true
 	} = options;
 
 	// If text is an array, e.g. type(['foo', 'bar'])
@@ -314,7 +316,7 @@ async function input(pw) {
 
 // Processes the user input and executes a command
 async function parse(input) {
-	input = cleanInput(input);
+	input = cleanInput(input).replace('.exe','');
 
 	if (!input) {
 		return;

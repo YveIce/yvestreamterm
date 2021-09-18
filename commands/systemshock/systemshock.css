@@ -1,8 +1,9 @@
 .systemshock {
-	font-family: "Lucida Console", "Consolas";
-	font-size: 1rem;
-	line-height: 1rem;
-	overflow-y: auto;
+	font-family: monospace;
+	font-size: 12pt;
+	line-height: 16pt;
+	overflow: hidden;
+	text-rendering: optimizespeed;
 }
 
 .triop {

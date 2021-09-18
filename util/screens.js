@@ -3,8 +3,8 @@ import pause from "./pause.js";
 import alert from "./alert.js";
 import say from "./speak.js";
 
-const USER = "admin";
-const PW = "admin";
+const USER = "hecamus";
+const PW = "enterenter";
 
 /** Boot screen */
 async function boot() {

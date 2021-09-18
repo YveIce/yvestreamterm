@@ -29,18 +29,28 @@ async function command() {
 	div(screen, "triop");
 
 	// await pause(5);
-	await waitForKey();
+	//await waitForKey();
 
 	clear(screen);
 
 	addTemplate("load", screen);
 
-	await type("PCI Device listing.............", {}, screen);
+	await type("Initialize Yve™-Streaming-OS....", {}, screen);
 
-	addTemplate("pci", screen, { wait: 3 });
+	await addTemplate("code", screen, { wait: 5 });
+//	await pause(1);
+	await type("make..............", {wait: 10}, screen);
+//	await pause(1);
+	await type("loading stream.................", {wait: 5}, screen);
 
-	await waitForKey();
+	//await addTemplate("face", screen, { wait: 0, lineWait: 10, processChars: true });
 
+	//await pause(1);
+	await clear(screen);
+	await addTemplate("face", screen, { wait: 0, lineWait: 10, processChars: false });
+
+	// await waitForKey();
+	await pause(50);
 	return screen.remove();
 }
 
